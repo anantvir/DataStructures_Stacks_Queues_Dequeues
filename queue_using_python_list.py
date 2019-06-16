@@ -1,9 +1,9 @@
 # constant length implementation
 class Queue_List:
-    INITITAL_CAPACITY = 4
+    DEFAULT_CAPACITY = 4
 
     def __init__(self):
-        self.Q = [None] * Queue_List.INITITAL_CAPACITY
+        self.Q = [None] * Queue_List.DEFAULT_CAPACITY
         self.n = 0
         self.front = None
         self.rear = None
