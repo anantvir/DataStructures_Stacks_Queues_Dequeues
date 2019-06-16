@@ -1,3 +1,4 @@
+# constant length implementation
 class Queue_List:
     INITITAL_CAPACITY = 4
 
