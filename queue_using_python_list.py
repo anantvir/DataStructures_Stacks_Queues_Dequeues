@@ -11,7 +11,7 @@ class Queue_List:
     def enqueue(self,item):
 
         if self.front==0 and self.rear == len(self.Q) - 1:
-            print('Stack Overflow')
+            print('Overflow')
         
         #------------find new rear-----------
         if self.rear == len(self.Q) - 1:
@@ -29,7 +29,7 @@ class Queue_List:
 
     def dequeue(self):
         if self.front == None:
-            print('Stack Underflow !')
+            print('Underflow !')
         item = self.Q[self.front]
         self.Q[self.front] = None
         self.n -= 1
