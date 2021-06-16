@@ -1,6 +1,6 @@
 # constant length implementation
 class Queue_List:
-    DEFAULT_CAPACITY = 4
+    DEFAULT_CAPACITY = 10
 
     def __init__(self):
         self.Q = [None] * Queue_List.DEFAULT_CAPACITY   
@@ -9,7 +9,6 @@ class Queue_List:
         self.rear = None                                #pointer for rear of list
 
     def enqueue(self,item):
-
         if self.front==0 and self.rear == len(self.Q) - 1:
             print('Overflow')
         
@@ -23,8 +22,7 @@ class Queue_List:
             self.rear += 1
         #--------------------------------------
         self.Q[self.rear] = item
-        self.n += 1
-        
+        self.n += 1     
         return self.Q
 
     def dequeue(self):
